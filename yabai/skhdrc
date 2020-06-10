@@ -68,7 +68,7 @@ shift + lctrl + alt - j : yabai -m window --insert south
 shift + lctrl + alt - k : yabai -m window --insert north
 shift + lctrl + alt - l : yabai -m window --insert east
 
-# Float / Unfloat window
+# Float / Unfloat window(更换layout方式)w
 shift + alt - space : yabai -m window --toggle float
 
 # Restart Yabai
@@ -92,3 +92,19 @@ shift + alt - w : yabai -m window --resize top:0:-20
 # decrease window size
 shift + alt - a : yabai -m window --resize left:20:0
 shift + alt - s : yabai -m window --resize top:0:20
+
+
+# fast focus desktop(切换空间焦点)
+# cmd + alt - x : yabai -m space --focus recent
+# cmd + alt - z : yabai -m space --focus prev
+# cmd + alt - c : yabai -m space --focus next
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
+alt - 0 : yabai -m space --focus 10
