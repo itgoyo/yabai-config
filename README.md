@@ -1,7 +1,6 @@
 # chunkwm, yabai and skhd configs
 My personal chunkwm, yabai and skhd configs
 
-See my [dotfiles](https://gitlab.com/julian-heng/dotfiles.git) repo for my other configs
 
 NOTE: yabai requires System Integrity Protection to be disabled to work properly. See [here](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection) for more information.
 
