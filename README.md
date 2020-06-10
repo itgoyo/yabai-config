@@ -31,15 +31,24 @@ $ ln -s "${HOME}/.config/yabai/yabai/skhdrc" "${HOME}/.skhdrc"
 #### Changing focus
 <kbd>alt</kbd> + <kbd>hjkl</kbd>
 
+### focus
+| Action       | Key Combination                                  |
+|--------------|--------------------------------------------------|
+| focus west  | <kbd>alt</kbd> +  <kbd>h</kbd> |
+| focus south | <kbd>alt</kbd> +  <kbd>j</kbd> |
+| focus north | <kbd>alt</kbd> +  <kbd>k</kbd> |
+| focus east  | <kbd>alt</kbd> +  <kbd>l</kbd> |
+
+
 #### Resize windows
 
 | Action       | Key Combination                                  |
 |--------------|--------------------------------------------------|
-| Resize left  | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>h</kbd> |
-| Resize down  | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>j</kbd> |
-| Resize up    | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>k</kbd> |
-| Resize right | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>l</kbd> |
-| Equalise     | <kbd>lctrl</kbd> + <kbd>alt</kbd> + <kbd>0</kbd> |
+| Resize left  | <kbd>shfit</kbd> + <kbd>cmd</kbd> + <kbd>h</kbd> |
+| Resize down  | <kbd>shfit</kbd> + <kbd>cmd</kbd> + <kbd>j</kbd> |
+| Resize up    | <kbd>shfit</kbd> + <kbd>cmd</kbd> + <kbd>k</kbd> |
+| Resize right | <kbd>shfit</kbd> + <kbd>cmd</kbd> + <kbd>l</kbd> |
+| Equalise     | <kbd>shfit</kbd> + <kbd>cmd</kbd> + <kbd>0</kbd> |
 
 #### Move windows
 <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>hjkl</kbd>
