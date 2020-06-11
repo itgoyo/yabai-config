@@ -43,8 +43,9 @@ yabai -m config auto_balance                off
 # ====== Border settings =======================
 
 yabai -m config window_border               on
-yabai -m config window_border_width         15
+yabai -m config window_border_width         8
 yabai -m config active_window_border_color   0xff775759
 yabai -m config normal_window_border_color   0xff505050
 yabai -m config insert_window_border_color   0xffd75f5f
+
 
