@@ -50,10 +50,18 @@ yabai -m config insert_window_border_color   0xffd75f5f
 
 # ====== List of rules =========================
 yabai -m rule --add label=chrome app="Google Chrome" space=2
-yabai -m rule --add label=iTerm2 app="iTerm" space=1
-yabai -m rule --add label=wechat app="Wechat" space=2
-yabai -m rule --add label=safari app="Safari" space=2
-yabai -m rule --add label=androidstudio app="Android Studio" space=3
-yabai -m rule --add label=musicapp app="Music" space=6
-yabai -m rule --add label=iina app="^IINA" space=5
 
+yabai -m rule --add label=iTerm2 app="iTerm" space=1
+
+yabai -m rule --add label=wechat app="^微信" space=4
+yabai -m rule --add label=qq app="^QQ" space=4
+
+yabai -m rule --add label=safari app="Safari" space=2
+
+yabai -m rule --add label=androidstudio app="Android Studio" space=3
+
+yabai -m rule --add label=musicapp app="Music" space=6
+
+yabai -m rule --add label=iina app="^IINA$" space=5
+
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off border=off
