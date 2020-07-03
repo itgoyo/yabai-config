@@ -124,7 +124,12 @@ ctrl + shift - 8 : yabai -m window --space 8
 ctrl + shift - 9 : yabai -m window --space 9
 ctrl + shift - 0 : yabai -m window --space 10
 
+<<<<<<< HEAD
 alt + ctrl - f : yabai -m space --layout float && \
                  yabai -m config window_border off
 alt + ctrl - b : yabai -m space --layout bsp && \
                  yabai -m config window_border on
+=======
+
+
+>>>>>>> db2a06bc64eeee571bd5d64db20eab5cd6e98633
