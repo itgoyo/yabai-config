@@ -11,10 +11,10 @@ gaps_inner="10"
 
 # ====== Tiling settings =======================
 
-# 使用font-awesome替代罗马数字
+# 使用 font-awesome 替代罗马数字
 
 
-yabai -m config layout                      bsp
+ yabai -m config layout                      bsp
 
 # bar settings
 
@@ -43,8 +43,35 @@ yabai -m config auto_balance                off
 # ====== Border settings =======================
 
 yabai -m config window_border               on
-yabai -m config window_border_width         15
-yabai -m config active_window_border_color   0xff775759
+yabai -m config window_border_width         0
+yabai -m config active_window_border_color   0xffffa931
 yabai -m config normal_window_border_color   0xff505050
 yabai -m config insert_window_border_color   0xffd75f5f
 
+# ====== List of rules =========================
+# yabai -m rule --add label=chrome app="^Google Chrome$" space=2
+
+yabai -m rule --add label=iTerm2 app="^iTerm$" space=1
+
+# yabai -m rule --add label=wechat app="^ 微信 $" space=4
+# yabai -m rule --add label=qq app="^ 微信" space=4
+
+yabai -m rule --add label=safari app="^Safari$" space=2
+
+yabai -m rule --add label=androidstudio app="^Android Studio$" space=3
+
+yabai -m rule --add label=musicapp app="^Music$" space=6
+yabai -m rule --add label=netease app="^网易云音乐" space=6
+
+# yabai -m rule --add label=iina app="^IINA$" space=5
+
+# yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off border=off
+
+
+# 临时性的 App 也就是 manage=off 不受到 yabai 平铺式的限制，之前怎么弹出来就怎么弹出来
+ otherApp='^(访达|Finder|Calendar|日历|System Preferences|系统偏好设置|1Password 7|Mail|微信|WeChatc|QQ|Google Chrome|IINA|Visual Studio Code|OBS)$'
+yabai -m rule --add app="${otherApp}" manage=off
+
+
+yabai -m signal --add event=space_changed action="type=\$(yabai -m query --spaces --space | jq .type) && [ \$type = '\"bsp\"' ] && yabai -m config window_border on"
+yabai -m signal --add event=space_changed action="type=\$(yabai -m query --spaces --space | jq .type) && [ \$type = '\"float\"' ] && yabai -m config window_border off"
