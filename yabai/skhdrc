@@ -1,5 +1,5 @@
-# opens iTerm2
-alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
+# opens iTerm2(暂时隐藏了，因为权限太高了，导致AS快捷键都捕获不到，热键冲突)
+#alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
 
 # Show system statistics
 
@@ -111,6 +111,13 @@ alt - 0 : yabai -m space --focus 10
 
 # create new space
 ctrl - n : yabai -m space --create
+ctrl - m : yabai -m space --destroy
+
+# destroy empty spaces
+shift + cmd + alt - w : echo "destroy empty spaces";\
+                        yabai -m query --spaces \
+                        | jq 'reverse | .[] | select((.windows | length) == 0) | .index' \
+                        | xargs -I{} yabai -m space {} --destroy \;
 
 # send window to space
 ctrl + shift - 1 : yabai -m window --space 1
@@ -123,6 +130,8 @@ ctrl + shift - 7 : yabai -m window --space 7
 ctrl + shift - 8 : yabai -m window --space 8
 ctrl + shift - 9 : yabai -m window --space 9
 ctrl + shift - 0 : yabai -m window --space 10
+
+
 
 
 
