@@ -1,6 +1,7 @@
 # opens iTerm2(暂时隐藏了，因为权限太高了，导致AS快捷键都捕获不到，热键冲突)
 #alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
 
+
 # Show system statistics
 
 
@@ -68,7 +69,7 @@ shift + lctrl + alt - j : yabai -m window --insert south
 shift + lctrl + alt - k : yabai -m window --insert north
 shift + lctrl + alt - l : yabai -m window --insert east
 
-# Float / Unfloat window(更换layout方式)w
+# Float / Unfloat window (更换 layout 方式) w
 shift + alt - space : yabai -m window --toggle float
 
 # Restart Yabai
@@ -84,7 +85,7 @@ shift + alt - f : yabai -m window --toggle native-fullscreen
 # toggle window split type
 alt - e : yabai -m window --toggle split
 
-# increase window size 竖直方向才能用top  水平方向才能用left
+# increase window size 竖直方向才能用 top  水平方向才能用 left
 shift + alt - d : yabai -m window --resize left:-20:0
 shift + alt - w : yabai -m window --resize top:0:-20
 
@@ -94,7 +95,7 @@ shift + alt - a : yabai -m window --resize left:20:0
 shift + alt - s : yabai -m window --resize top:0:20
 
 
-# fast focus desktop(切换空间焦点)
+# fast focus desktop (切换空间焦点)
 # cmd + alt - x : yabai -m space --focus recent
 # cmd + alt - z : yabai -m space --focus prev
 # cmd + alt - c : yabai -m space --focus next
@@ -131,7 +132,10 @@ ctrl + shift - 8 : yabai -m window --space 8
 ctrl + shift - 9 : yabai -m window --space 9
 ctrl + shift - 0 : yabai -m window --space 10
 
-
+alt + ctrl - f : yabai -m space --layout float && \
+                 yabai -m config window_border off
+alt + ctrl - b : yabai -m space --layout bsp && \
+                 yabai -m config window_border on
 
 
 
