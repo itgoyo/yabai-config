@@ -64,6 +64,7 @@ yabai -m rule --add label=safari app="^Safari$" space=2
 # yabai -m rule --add label=androidstudio app="^Android Studio$" space=3
 
 yabai -m rule --add label=musicapp app="^Music$" space=6
+yabai -m rule --add label=musicapp app="网易云音乐" space=6
 
 # yabai -m rule --add label=iina app="^IINA$" space=5
 
