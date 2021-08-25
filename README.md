@@ -1,3 +1,8 @@
+### 视频教程地址
+
+https://www.bilibili.com/video/BV1gf4y117aU?from=search&seid=8372827042697178885
+
+
 # chunkwm, yabai and skhd configs
 My personal chunkwm, yabai and skhd configs
 
